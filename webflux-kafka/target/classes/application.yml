@@ -1,0 +1,13 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/webfluxdb
+    username: webflux_user
+    password: webflux_pass
+
+  sql:
+    init:
+      mode: always
+
+logging:
+  level:
+    org.springframework.r2dbc: DEBUG
